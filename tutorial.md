@@ -3,6 +3,7 @@ Sign Language App
 
 In this activity, you will learn to show the messages based on different hand signs.
 
+
 <img src= "https://media.slid.es/uploads/1525749/images/10511522/pcp.gif" width = "480" height = "320">
 
 
@@ -22,7 +23,7 @@ Follow the given steps to complete this activity:
   
     `signText = "Hello!"`
     
-* If four fingers are up set `signText` to `"How are your?"`.
+* If four fingers are up set `signText` to `"How are you?"`.
 
   `if fingers[0] == 1 and fingers[1] == 1 and fingers[2] == 1 and fingers[3] == 1 and fingers[4] == 1:`
   
