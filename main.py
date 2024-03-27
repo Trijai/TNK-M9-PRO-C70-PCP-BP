@@ -23,15 +23,18 @@ while True:
             fingers = detector.fingersUp(hand1)
             if len(lmList) > 0:
                 # Create a variable named 'signText' to hold the text message
-
+                signText = ""
                 # If All fingers and thumb are up set 'signText' to 'Hello'
-
+                if fingers[0] == 0 and fingers[1] == 1 and fingers[2] == 1 and fingers[3] == 1 and fingers[4] == 1:
+                    signText = "Hello!
                 # If four fingers are up set 'signText' to "How are your?"
-
+                if fingers[0] == 1 and fingers[1] == 1 and fingers[2] == 1 and fingers[3] == 1 and fingers[4] == 1:
+                    signText = "How are you?"
                 # If thumb and small finger is up set 'signText' to "I was on a call."
-
+                if fingers[0] == 0 and fingers[1] == 0 and fingers[2] == 0 and fingers[3] == 0 and fingers[4] == 1:
+                    signText = "I was on a call."
                 # If first two fingers are up set 'signText' to "Be Quick!"
-
+                
                 # If last three fingers are up set 'signText' to "Urgent work!"
 
                 # If all fingers and thumb are down set 'signText' to "Stop"
